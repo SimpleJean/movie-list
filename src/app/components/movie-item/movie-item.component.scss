@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  /* margin: 0 auto;
+  width: 80vw; */
+
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-size: 5rem;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img {
+  width: 500px;
+}
+
+.overview {
+  width: 500px;
+  margin: 3vh 0 3vh 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+.overview-release {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 1.5rem;
+}
+
+.overview-vote {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 1.5rem;
+}
+
+.poster {
+  margin: 3vh 0 3vh 0;
+}

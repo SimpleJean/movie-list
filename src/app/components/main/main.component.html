@@ -1,0 +1,14 @@
+<div class="movies-container">
+  <div class="movie" *ngFor="let movie of moviesAll">
+    <a routerLink="{{movie.id}}">
+      <div class="title">
+        <h4>{{movie.title}}</h4>
+      </div>
+
+      <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" [alt]="movie.original_title">
+
+      <p class="rate">Rate: <b>{{movie.vote_average | number: '1.0-1'}}</b></p>
+    </a>
+  </div>
+</div>
+<router-outlet></router-outlet>

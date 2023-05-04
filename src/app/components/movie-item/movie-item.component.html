@@ -1,0 +1,12 @@
+<div *ngFor="let movie of oneMovie" class="movie-container">
+  <div class="title">
+    <h4>{{movie.original_title}}</h4>
+  </div>
+  <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" [alt]="">
+
+  <div class="overview"><b>Overview:</b> {{movie.overview}}</div>
+  <div class="overview-vote"><b>Vote average:</b> {{movie.vote_average}}</div>
+  <p class="overview-release"><b>Release date:</b> {{movie.release_date | date}}</p>
+  <h4>Poster</h4>
+  <img class="poster" src="https://image.tmdb.org/t/p/original{{movie.backdrop_path}}" [alt]="">
+</div>
